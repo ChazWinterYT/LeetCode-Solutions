@@ -44,6 +44,7 @@ class Solution {
         int[] minRight = new int[n];
         Stack<Integer> stack = new Stack<>();
         
+        // Use ">= arr" so the right-most instance of an element is always the minimum.
         for (int i = n - 1; i >= 0; i--) {
             while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {
                 stack.pop();
