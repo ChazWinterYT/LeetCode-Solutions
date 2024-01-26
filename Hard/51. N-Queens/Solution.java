@@ -3,7 +3,7 @@ class Solution {
     
     public List<List<String>> solveNQueens(int n) {
         // Use an int array (index = row, value = column) to represent the layout because 
-        // 1) it's simpler, and 2) you can't put two queens in the same row anyway.
+        // 1) it doesn't break my brain, and 2) you can't put two queens in the same row anyway.
         int[] queens = new int[n];
         backtrack(0, queens);
         return results;
