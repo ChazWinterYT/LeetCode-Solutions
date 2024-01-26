@@ -26,6 +26,7 @@ class Solution {
         // Backtrack if no valid column is found (how?) Turns out, do nothing lol
     }
     
+    // Check if the queen we just added is in the same column as a previously placed queen.
     private boolean sameColumn(int row, int[] queens) {
         for (int i = 0; i < row; i++) {
             if (queens[i] == queens[row]) {
@@ -35,6 +36,8 @@ class Solution {
         return false;
     }
     
+    // Check if the queen we just added is on the same diagonal as a previously placed 
+    // queen (explained at the bottom of this class).
     private boolean isDiagonal(int row, int[] queens) {
         for (int i = 0; i < row; i++) {
             int diffIndices = row - i;
