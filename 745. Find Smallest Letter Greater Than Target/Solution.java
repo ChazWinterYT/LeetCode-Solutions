@@ -6,7 +6,6 @@ class Solution {
         
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            System.out.println("Mid: " + mid);
             if (letters[mid] > target) {
                 right = mid - 1;
             } else {
