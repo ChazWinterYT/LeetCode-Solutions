@@ -12,7 +12,8 @@ class Solution {
         // is the subarray, which we should check for max length.
         int left = 0, right = 0;
         while (right < nums.length) {
-            // Expand with the right pointer if we don't have too many zeros. Also count the new value.
+            // Expand with the right pointer if we don't have too many zeros. Also count the new value
+            // and check the subarray length. Since we must delete one value, right - left is accurate.
             if (numZeros <= 1) {
                 max = Math.max(max, right - left);
                 right++;
