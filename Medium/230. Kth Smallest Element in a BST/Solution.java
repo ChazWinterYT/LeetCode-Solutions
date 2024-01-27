@@ -14,8 +14,6 @@
  * }
  */
 class Solution {
-    private int count = 0;
-    
     public int kthSmallest(TreeNode root, int k) {
         return kthSmallest(root, k, new int[]{0}); // Using an array so the int value becomes mutable
     }

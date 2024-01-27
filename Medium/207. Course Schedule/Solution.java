@@ -3,8 +3,7 @@ class Solution {
         Map<Integer, List<Integer>> courseMap = new HashMap<>();
         // Populate the HashMap with courses and their prereqs
         for (int i = 0; i < numCourses; i++) {
-            List<Integer> emptyList = new ArrayList<>();
-            courseMap.put(i, emptyList);
+            courseMap.put(i, new ArrayList<>());
         }
         for (int[] prereq : prerequisites) {
             List<Integer> prereqList = courseMap.get(prereq[0]);
