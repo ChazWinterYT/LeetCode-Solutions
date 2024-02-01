@@ -23,7 +23,8 @@ class Solution {
                 backtrack(row + 1, queens);
             }
         }
-        // Backtrack if no valid column is found (how?) Turns out, do nothing lol
+        // Backtrack if no valid column is found (what goes here?!?!?!)
+        
     }
     
     // Check if the queen we just added is in the same column as a previously placed queen.
@@ -54,9 +55,10 @@ class Solution {
         List<String> board = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         
+        // [ 2, 0, 3, 1 ]
         for (int row = 0; row < queens.length; row++) {
             for (int col = 0; col < queens.length; col++) {
-                // Put a 'Q' at the index containing the Queen, '.' otherwise.
+                // Put a 'Q' at the index containing the Queen, or else put a '.'
                 if (queens[row] == col) {
                     sb.append('Q');
                 } else {
@@ -70,13 +72,16 @@ class Solution {
     }
 }
 
-
 /*
     Diagonal examples
-    0,1         0,3         0,7     0,0
-    1,2         1,4         1,6     1,1
-    2,3         2,5         2,5     2,2
-    3,4         3,6         3,4     3,3
+    0,1         0,3         0,7         0,0
+    1,2         1,4         1,6         1,1
+    2,3         2,5         2,5         2,2
+    3,4         3,6         3,4         3,3
     Difference between indices is always == (Absolute) difference between values
 
 */
+
+
+
+
