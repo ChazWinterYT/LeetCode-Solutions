@@ -55,7 +55,6 @@ class Solution {
         List<String> board = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
         
-        // [ 2, 0, 3, 1 ]
         for (int row = 0; row < queens.length; row++) {
             for (int col = 0; col < queens.length; col++) {
                 // Put a 'Q' at the index containing the Queen, or else put a '.'
